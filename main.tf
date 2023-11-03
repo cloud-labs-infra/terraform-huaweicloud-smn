@@ -1,5 +1,5 @@
 resource "huaweicloud_smn_topic" "topic" {
-  name         = var.topic_name
+  name = var.topic_name
 }
 
 resource "huaweicloud_smn_subscription" "emails" {
