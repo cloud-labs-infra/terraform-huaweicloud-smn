@@ -3,7 +3,7 @@ resource "huaweicloud_smn_topic" "topic" {
 }
 
 resource "huaweicloud_smn_subscription" "emails" {
-  for_each = toset(var.endpoints)
+  for_each = toset(var.emails)
 
   topic_urn = huaweicloud_smn_topic.topic.id
   endpoint  = each.value

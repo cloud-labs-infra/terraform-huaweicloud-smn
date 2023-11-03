@@ -3,8 +3,8 @@ variable "topic_name" {
   type        = string
 }
 
-variable "endpoints" {
-  description = "Specifies the name of the topic to be created"
+variable "emails" {
+  description = "Specifies the subscriptions emails"
   type        = list(string)
   default     = []
 }
