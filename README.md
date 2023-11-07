@@ -29,6 +29,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_emails"></a> [emails](#input\_emails) | Specifies the subscriptions emails | `list(string)` | `[]` | no |
+| <a name="input_name_postfix"></a> [name\_postfix](#input\_name\_postfix) | Name Postfix | `string` | `null` | no |
 | <a name="input_topic_name"></a> [topic\_name](#input\_topic\_name) | Specifies the name of the topic to be created | `string` | n/a | yes |
 
 ## Outputs
