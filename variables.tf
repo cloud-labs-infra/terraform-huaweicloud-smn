@@ -3,6 +3,13 @@ variable "topic_name" {
   type        = string
 }
 
+
+variable "name_postfix" {
+  description = "Name Postfix"
+  type        = string
+  default     = null
+}
+
 variable "emails" {
   description = "Specifies the subscriptions emails"
   type        = list(string)

@@ -1,3 +1,7 @@
+locals {
+  name = var.name_postfix == null ? var.topic_name : format("%s-%s", var.topic_name, var.name_postfix)
+}
+
 resource "huaweicloud_smn_topic" "topic" {
   name = var.topic_name
 }
